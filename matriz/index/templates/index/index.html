@@ -2,11 +2,13 @@
 
 {% block title %}Matriz de complejidad{% endblock %}
 
-{% block encabezado %}<h1>Cálculo matriz de complejidad</h1>{% endblock %}
+{% block encabezado %}
+    <h1>Cálculo matriz de complejidad</h1>
+{% endblock %}
 
 {% block content %}
-    <form action="" method="" class="formulario">
-        <div class="conjunto">
+    <form action="" method="POST" class="formulario" id="formulario-complejidad">{% csrf_token %}
+        <div id="preguntas-complejidad" class="conjunto">
             <h2>Complejidad del negocio en relación al proyecto</h2>
             <div class="formElement">
                 <label for="ejecutivos">¿Cuantos ejecutivos de la organización poseen conocimientos en esa rama del negocio?</label>
@@ -73,7 +75,7 @@
                 </select>
             </div><!-- Fin .formElement -->
         </div><!-- Fin .conjunto -->
-        <div class="conjunto">
+        <div id="preguntas-tegnologia" class="conjunto">
             <h2>Complejidad tecnologías para implementar el proyecto</h2>
             <div class="formElement">
                 <label for="arquitectura">Arquitectura tecnológica del proyecto</label>
@@ -143,4 +145,13 @@
 
         <input type="submit" value="Calcular complejidad" id="btn-submit" class="btn">
     </form>
+
+    <p id="valor"></p>
+
+    {% if chart %}
+        <img src="data:image/png;base64, {{ chart|safe }}" alt="">
+    {% endif %}
+    {% if data %}
+        <p>{{ data }}</p>
+    {% endif %}
 {% endblock %}
