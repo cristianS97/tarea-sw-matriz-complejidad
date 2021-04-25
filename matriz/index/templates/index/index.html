@@ -5,72 +5,142 @@
 {% block encabezado %}<h1>Cálculo matriz de complejidad</h1>{% endblock %}
 
 {% block content %}
-    <h2>Complejidad del negocio en relación al proyecto</h2>
+    <form action="" method="" class="formulario">
+        <div class="conjunto">
+            <h2>Complejidad del negocio en relación al proyecto</h2>
+            <div class="formElement">
+                <label for="ejecutivos">¿Cuantos ejecutivos de la organización poseen conocimientos en esa rama del negocio?</label>
+                <select name="ejecutivos" id="">
+                    <option value="1">Uno</option>
+                    <option value="2">Entre 2 y 3</option>
+                    <option value="3">4 o más</option>
+                </select>
+            </div><!-- Fin .formElement -->
+            <div class="formElement">
+                <label for="definicion">¿Definición de Objetivos del negocio?</label>
+                <select name="definicion" id="">
+                    <option value="1">Método SMART</option>
+                    <option value="2">Método SMART, aplicado no en su totalidad</option>
+                    <option value="3">Vagos</option>
+                </select>
+            </div><!-- Fin .formElement -->
+            <div class="formElement">
+                <label for="procesos">¿Procesos de negocio?</label>
+                <select name="procesos" id="">
+                    <option value="1">Pocos (1 a 4)</option>
+                    <option value="2">5 a 6</option>
+                    <option value="3">Muchos, más de 6</option>
+                </select>
+            </div><!-- Fin .formElement -->
+            <div class="formElement">
+                <label for="politicas">¿Políticas del negocio?</label>
+                <select name="politicas" id="">
+                    <option value="1">Existentes</option>
+                    <option value="2">Vagas</option>
+                    <option value="3">Inexistentes</option>
+                </select>
+            </div><!-- Fin .formElement -->
+            <div class="formElement">
+                <label for="regulaciones">¿Regulaciones del negocio (Superintendencia o SII)?</label>
+                <select name="regulaciones" id="">
+                    <option value="1">Pocas y Simples</option>
+                    <option value="2">Pocas y complejas</option>
+                    <option value="3">Muchas y Complejas</option>
+                </select>
+            </div><!-- Fin .formElement -->
+            <div class="formElement">
+                <label for="personal">¿Personal?</label>
+                <select name="personal" id="">
+                    <option value="1">Experimentado</option>
+                    <option value="2">Poca experiencia</option>
+                    <option value="3">Sin Experiencia</option>
+                </select>
+            </div><!-- Fin .formElement -->
+            <div class="formElement">
+                <label for="ambito">¿Ámbito geográfico del negocio?</label>
+                <select name="ambito" id="">
+                    <option value="1">Una Localización</option>
+                    <option value="2">Regional</option>
+                    <option value="3">Global</option>
+                </select>
+            </div><!-- Fin .formElement -->
+            <div class="formElement">
+                <label for="reglas">¿Reglas internas del negocio?</label>
+                <select name="reglas" id="">
+                    <option value="1">Establecidas</option>
+                    <option value="2">Vagas</option>
+                    <option value="3">Inexistentes</option>
+                </select>
+            </div><!-- Fin .formElement -->
+        </div><!-- Fin .conjunto -->
+        <div class="conjunto">
+            <h2>Complejidad tecnologías para implementar el proyecto</h2>
+            <div class="formElement">
+                <label for="arquitectura">Arquitectura tecnológica del proyecto</label>
+                <select name="arquitectura" id="">
+                    <option value="1">Existente en la  empresa</option>
+                    <option value="2">Existen, pero no desarrolladas</option>
+                    <option value="3">Inexistente en la empresa</option>
+                </select>
+            </div><!-- Fin .formElement -->
+            <div class="formElement">
+                <label for="proveedores">Proveedores de Tecnología y telecomunicaciones</label>
+                <select name="proveedores" id="">
+                    <option value="1">Antiguos, con presencia de más de 4 años en el mercado</option>
+                    <option value="2">Antiguos con presencia de menos de 4 años en le mercado</option>
+                    <option value="3">Nuevos</option>
+                </select>
+            </div><!-- Fin .formElement -->
+            <div class="formElement">
+                <label for="dispositivos">Localización de los dispositivos a controlar</label>
+                <select name="dispositivos" id="">
+                    <option value="1">Una</option>
+                    <option value="2">Entre 3 y 4 localizaciones</option>
+                    <option value="3">5 o más</option>
+                </select>
+            </div><!-- Fin .formElement -->
+            <div class="formElement">
+                <label for="personal">Personal de áreas tecnológicas</label>
+                <select name="personal" id="">
+                    <option value="1">Experimentado, más de 2 años</option>
+                    <option value="2">Menos de 2 años de experiencia</option>
+                    <option value="3">Sin experiencia</option>
+                </select>
+            </div><!-- Fin .formElement -->
+            <div class="formElement">
+                <label for="plataformas">Cantidad de plataformas</label>
+                <select name="plataformas" id="">
+                    <option value="1">Pocas (1 a 3)</option>
+                    <option value="2">4</option>
+                    <option value="3">Muchas (más de 4)</option>
+                </select>
+            </div><!-- Fin .formElement -->
+            <div class="formElement">
+                <label for="integracion">Nivel de integración de las distintas plataformas, actualmente</label>
+                <select name="integracion" id="">
+                    <option value="1">Integradas</option>
+                    <option value="2">Medianamente integradas</option>
+                    <option value="3">Sin integración</option>
+                </select>
+            </div><!-- Fin .formElement -->
+            <div class="formElement">
+                <label for="tolerancia">Plataformas tolerantes a fallas o redundantes</label>
+                <select name="tolerancia" id="">
+                    <option value="1">Muchas (Mayor a 70%)</option>
+                    <option value="2">Entre 30% y 69%</option>
+                    <option value="3">Menos de 30%</option>
+                </select>
+            </div><!-- Fin .formElement -->
+            <div class="formElement">
+                <label for="obsolesencia">Involucra tecnologias obsoletas</label>
+                <select name="obsolesencia" id="">
+                    <option value="1">No involucra tecnología obsoleta</option>
+                    <option value="2">Involucra medianamente</option>
+                    <option value="3">Mayoritariamente</option>
+                </select>
+            </div><!-- Fin .formElement -->
+        </div><!-- Fin .conjunto -->
 
-    <form action="" method="">
-        <div class="formElement">
-            <label for="ejecutivos">¿Cuantos ejecutivos de la organización poseen conocimientos en esa rama del negocio?</label>
-            <select name="ejecutivos" id="">
-                <option value="1">Uno</option>
-                <option value="2">Entre 2 y 3</option>
-                <option value="3">4 o más</option>
-            </select>
-        </div>
-        <div class="formElement">
-            <label for="definicion">¿Definición de Objetivos del negocio?</label>
-            <select name="definicion" id="">
-                <option value="1">Método SMART</option>
-                <option value="2">Método SMART, aplicado no en su totalidad</option>
-                <option value="3">Vagos</option>
-            </select>
-        </div>
-        <div class="formElement">
-            <label for="procesos">¿Procesos de negocio?</label>
-            <select name="procesos" id="">
-                <option value="1">Pocos (1 a 4)</option>
-                <option value="2">5 a 6</option>
-                <option value="3">Muchos, más de 6</option>
-            </select>
-        </div>
-        <div class="formElement">
-            <label for="politicas">¿Políticas del negocio?</label>
-            <select name="politicas" id="">
-                <option value="1">Existentes</option>
-                <option value="2">Vagas</option>
-                <option value="3">Inexistentes</option>
-            </select>
-        </div>
-        <div class="formElement">
-            <label for="regulaciones">¿Regulaciones del negocio (Superintendencia o SII)?</label>
-            <select name="regulaciones" id="">
-                <option value="1">Pocas y Simples</option>
-                <option value="2">Pocas y complejas</option>
-                <option value="3">Muchas y Complejas</option>
-            </select>
-        </div>
-        <div class="formElement">
-            <label for="personal">¿Personal?</label>
-            <select name="personal" id="">
-                <option value="1">Experimentado</option>
-                <option value="2">Poca experiencia</option>
-                <option value="3">Sin Experiencia</option>
-            </select>
-        </div>
-        <div class="formElement">
-            <label for="ambito">¿Ámbito geográfico del negocio?</label>
-            <select name="ambito" id="">
-                <option value="1">Una Localización</option>
-                <option value="2">Regional</option>
-                <option value="3">Global</option>
-            </select>
-        </div>
-        <div class="formElement">
-            <label for="reglas">¿Reglas internas del negocio?</label>
-            <select name="reglas" id="">
-                <option value="1">Establecidas</option>
-                <option value="2">Vagas</option>
-                <option value="3">Inexistentes</option>
-            </select>
-        </div>
+        <input type="submit" value="Calcular complejidad" id="btn-submit" class="btn">
     </form>
 {% endblock %}
