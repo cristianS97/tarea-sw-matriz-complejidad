@@ -5,5 +5,72 @@
 {% block encabezado %}<h1>Cálculo matriz de complejidad</h1>{% endblock %}
 
 {% block content %}
-    <p>Contenido del sitio</p>
+    <h2>Complejidad del negocio en relación al proyecto</h2>
+
+    <form action="" method="">
+        <div class="formElement">
+            <label for="ejecutivos">¿Cuantos ejecutivos de la organización poseen conocimientos en esa rama del negocio?</label>
+            <select name="ejecutivos" id="">
+                <option value="1">Uno</option>
+                <option value="2">Entre 2 y 3</option>
+                <option value="3">4 o más</option>
+            </select>
+        </div>
+        <div class="formElement">
+            <label for="definicion">¿Definición de Objetivos del negocio?</label>
+            <select name="definicion" id="">
+                <option value="1">Método SMART</option>
+                <option value="2">Método SMART, aplicado no en su totalidad</option>
+                <option value="3">Vagos</option>
+            </select>
+        </div>
+        <div class="formElement">
+            <label for="procesos">¿Procesos de negocio?</label>
+            <select name="procesos" id="">
+                <option value="1">Pocos (1 a 4)</option>
+                <option value="2">5 a 6</option>
+                <option value="3">Muchos, más de 6</option>
+            </select>
+        </div>
+        <div class="formElement">
+            <label for="politicas">¿Políticas del negocio?</label>
+            <select name="politicas" id="">
+                <option value="1">Existentes</option>
+                <option value="2">Vagas</option>
+                <option value="3">Inexistentes</option>
+            </select>
+        </div>
+        <div class="formElement">
+            <label for="regulaciones">¿Regulaciones del negocio (Superintendencia o SII)?</label>
+            <select name="regulaciones" id="">
+                <option value="1">Pocas y Simples</option>
+                <option value="2">Pocas y complejas</option>
+                <option value="3">Muchas y Complejas</option>
+            </select>
+        </div>
+        <div class="formElement">
+            <label for="personal">¿Personal?</label>
+            <select name="personal" id="">
+                <option value="1">Experimentado</option>
+                <option value="2">Poca experiencia</option>
+                <option value="3">Sin Experiencia</option>
+            </select>
+        </div>
+        <div class="formElement">
+            <label for="ambito">¿Ámbito geográfico del negocio?</label>
+            <select name="ambito" id="">
+                <option value="1">Una Localización</option>
+                <option value="2">Regional</option>
+                <option value="3">Global</option>
+            </select>
+        </div>
+        <div class="formElement">
+            <label for="reglas">¿Reglas internas del negocio?</label>
+            <select name="reglas" id="">
+                <option value="1">Establecidas</option>
+                <option value="2">Vagas</option>
+                <option value="3">Inexistentes</option>
+            </select>
+        </div>
+    </form>
 {% endblock %}
