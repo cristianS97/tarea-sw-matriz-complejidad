@@ -16,7 +16,6 @@ class IndexView(TemplateView):
             self.chart = None
 
     def get(self, request, *args, **kwargs):
-        print('Valor, request', )
         self.x = request.GET.get('x', None)
         self.y = request.GET.get('y', None)
         self.change_chart()

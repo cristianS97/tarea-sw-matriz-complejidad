@@ -1,7 +1,7 @@
 window.addEventListener('load', () => {
     let btn = document.getElementById('btn-submit');
 
-    function calculoCoordenada(formulario) {
+    let calculoCoordenada = (formulario) => {
         let formElements = formulario.querySelectorAll('.formElement');
         let coordenada = 0;
 
@@ -13,7 +13,7 @@ window.addEventListener('load', () => {
         return coordenada;
     }
 
-    btn.addEventListener('click', function(e){
+    btn.addEventListener('click', (e) => {
         e.preventDefault();
 
         let formulario_complejidad = document.querySelector('#preguntas-complejidad');

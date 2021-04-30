@@ -8,9 +8,38 @@ html {
     margin: 0;
     padding: 0;
 }
+h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
 form {
     display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
 }
-form button {
+.btn {
+    margin: 50px auto;
+}
+.conjunto {
+    width: calc(50% - 1rem);
+    margin: 0 auto;
+}
+.conjunto h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+.conjunto .formElement {
+    width: 50%;
+    margin: 10px auto;
     display: flex;
+    flex-direction: column;
+}
+img {
+    display:block;
+    margin:auto;
+    width: 800px;
+}
+.borrar {
+    text-align: center;
+    margin-bottom: 20px;
 }
