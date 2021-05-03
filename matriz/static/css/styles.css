@@ -11,11 +11,17 @@ html {
 h1 {
     text-align: center;
     margin-bottom: 50px;
+    font-size: 20px;
 }
 form {
     display: flex;
     margin: 0 auto;
     flex-wrap: wrap;
+    font-size: 10px;
+}
+form select,
+form select option {
+    font-size: 10px;
 }
 .btn {
     margin: 50px auto;
@@ -23,6 +29,7 @@ form {
     width: 150px;
     background: #F4DB40;
     color: #111224;
+    font-size: 10px;
 }
 .btn:hover {
     cursor: pointer;
@@ -44,7 +51,7 @@ form {
 img {
     display:block;
     margin:auto;
-    width: 800px;
+    width: 300px;
 }
 .borrar {
     text-align: center;
@@ -52,6 +59,7 @@ img {
     padding: 10px;
     width: 150px;
     background: #F4DB40;
+    font-size: 10px;
 }
 .borrar a {
     text-decoration: none;
