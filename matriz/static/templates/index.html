@@ -146,8 +146,14 @@
         <input type="submit" value="Calcular complejidad" id="btn-submit" class="btn">
     </form>
 
-    {% if chart %}
+    {% if chart and chart != 'invalid' %}
         <img src="data:image/png;base64, {{ chart|safe }}" alt="">
         <p class="borrar"><a href="/">Borrar</a></p>
     {% endif %}
+
+    {% if chart == 'invalid' %}
+        <p class="error"><b>Los datos ingresados no son válidos o ha ocurrido un error en el sistema, por favor verifique y consulte con el administrador</b></p>
+    {% endif %}
+
 {% endblock %}
+

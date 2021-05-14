@@ -14,6 +14,11 @@ class IndexView(TemplateView):
             self.chart = get_plot(int(self.x), int(self.y))
         except:
             self.chart = None
+        try:
+            if self.x < 8 or self.x > 24 or self.y < 8 or self.y > 24:
+                self.chart = "invalid"
+        except:
+            self.chart = None
 
     def get(self, request, *args, **kwargs):
         self.x = request.GET.get('x', None)
